@@ -3,10 +3,10 @@ from langchain_ollama.llms import OllamaLLM
 from langchain_community.document_loaders import PDFMinerLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import OllamaEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 import os
 # Load the model
-llm = OllamaLLM(model="llama3.1")
+llm = OllamaLLM(model="tinyllama")
 
 # Load the document
 document = PDFMinerLoader("./ss.pdf").load()
