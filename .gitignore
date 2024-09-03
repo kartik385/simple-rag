@@ -1,0 +1,22 @@
+# Ignore the db directory
+db/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.o
+*.out
+*.class
