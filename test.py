@@ -9,7 +9,7 @@ import os
 llm = OllamaLLM(model="tinyllama")
 
 # Load the document
-document = PDFMinerLoader("./ss.pdf").load()
+document = PDFMinerLoader("./elon.pdf").load()
 
 # Print the attributes of the document to find the correct one
 
@@ -46,7 +46,7 @@ from langchain_core.prompts import PromptTemplate
 template = """
 This is a wikipedia article of celebrity, give the answer to qustions about the article. 
 If you don't know the answer, just say you don't know. 
-You answer with short and concise answer, no longer than2 sentences.
+You answer with short and concise answer, no longer than 2 sentences.
 
 Context: {context}
 Question: {question}
